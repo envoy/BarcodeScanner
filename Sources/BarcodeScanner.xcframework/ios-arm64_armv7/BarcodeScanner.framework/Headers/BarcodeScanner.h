@@ -2,8 +2,8 @@
 //  BarcodeScanner.h
 //  BarcodeScanner
 //
-//  Created by Александр Ушаков on 16.02.15.
-//  Copyright (c) 2015 tauruna. All rights reserved.
+//  Created by Дмитрий Грищенко on 22/02/2019.
+//  Copyright © 2019 Abycus. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -1,19 +1,19 @@
 //
-//  BarcodeScanner.h
-//  BarcodeScanner
+//  MRZDetection.h
+//  MRZDetection
 //
-//  Created by Александр Ушаков on 06.01.15.
-//  Copyright (c) 2015 tauruna. All rights reserved.
+//  Created by Дмитрий Грищенко on 22/02/2019.
+//  Copyright © 2019 Abycus. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVFoundation.h>
 
-@interface Barcode2DScanner : NSObject {
-    bool isDemo;
-}
+@interface Barcode2DScanner : NSObject
 
--(void) registerCode: (NSString*) code;
-//-(NSString*) scanGrayscaleImage: (AVMetadataMachineReadableCodeObject*) pp_image Width: (int) width Height: (int) height Encoding: (NSStringEncoding) encoding;
--(NSString*) scanGrayscaleImage: (uint8_t*)  pp_image Width: (int) width Height: (int) height;
+- (void) registerCode: (NSString*) code;
+- (void) registerMRZKey: (NSString*) key;
+- (NSString*) scanGrayscaleImage: (uint8_t*)pp_image Width: (int) width Height: (int) height;
+- (NSString*) detectMRZ: (unsigned char*)pp_image width:(int)width height:(int)height;
+- (NSString*) getVersion;
+
 @end
